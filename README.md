@@ -10,4 +10,6 @@ php -S localhost:8080
 
 Open `http://localhost:8080`.
 
-Business details are configured in `config.php`. Replace gallery placeholders in `index.php` with real client images when available.
+Business and social details are configured in `config.php`. Enquiries are stored in `storage/enquiries.sqlite`, which is created automatically and excluded from Git. The reusable schema is documented in `schema.sql`.
+
+Replace gallery placeholders in `index.php` with real client images when available.
