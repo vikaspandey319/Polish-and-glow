@@ -1,0 +1,2 @@
+ALTER TABLE enquiries
+    ADD COLUMN email VARCHAR(254) NULL AFTER phone;

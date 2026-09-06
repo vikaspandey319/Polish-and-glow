@@ -2,6 +2,7 @@ CREATE TABLE IF NOT EXISTS enquiries (
     id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     phone VARCHAR(20) NOT NULL,
+    email VARCHAR(254) NULL,
     interest VARCHAR(60) NOT NULL,
     preferred_date DATE NULL,
     message TEXT NULL,

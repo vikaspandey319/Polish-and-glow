@@ -6,7 +6,7 @@ $(function () {
   $('#bookingForm').on('submit', function (event) {
     event.preventDefault();
     const $button = $(this).find('button[type="submit"]');
-    const payload = { name: $.trim($('#name').val()), phone: $.trim($('#phone').val()), interest: $('#interest').val(), preferred_date: $('#date').val(), message: $.trim($('#message').val()), website: $('#website').val() };
+    const payload = { name: $.trim($('#name').val()), phone: $.trim($('#phone').val()), email: $.trim($('#email').val()), interest: $('#interest').val(), preferred_date: $('#date').val(), message: $.trim($('#message').val()), website: $('#website').val() };
     $('#formStatus').removeClass('error').text('');
     if (!payload.name || !/^\+?[0-9\s-]{8,15}$/.test(payload.phone) || !payload.interest) {
       $('#formStatus').text('Please add your name, a valid phone number and an interest.').addClass('error');
