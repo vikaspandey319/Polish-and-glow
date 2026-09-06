@@ -26,7 +26,7 @@ $curriculum = [
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260906-2">
 </head>
 <body>
   <div class="announcement">Appointments &amp; academy enquiries <span>✦</span> now open</div>
@@ -59,6 +59,6 @@ $curriculum = [
   <footer><div class="container"><div class="row g-4 align-items-start"><div class="col-lg-4"><img class="footer-logo" src="assets/images/polishandglow-logo.jpeg" alt="Polish and Glow logo"></div><div class="col-6 col-lg-2"><a href="#services">Services</a><a href="#academy">Academy</a><a href="#gallery">Gallery</a></div><div class="col-6 col-lg-2"><a href="#about">About</a><a href="#booking">Book</a><a href="<?= htmlspecialchars($config['instagram_url']) ?>" target="_blank" rel="noopener">Instagram</a><a href="<?= htmlspecialchars($config['facebook_url']) ?>" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/<?= htmlspecialchars($config['whatsapp']) ?>" target="_blank" rel="noopener">WhatsApp</a></div><div class="col-lg-4"><p>Beauty on Your Nails.<br>Skills for Your Future.</p></div></div><small>© <?= date('Y') ?> Polish &amp; Glow</small></div></footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js?v=20260906-2"></script>
 </body>
 </html>
