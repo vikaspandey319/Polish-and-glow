@@ -10,6 +10,7 @@ function notifyCourseEnquiry(array $enquiry): void
         '',
         'Name: ' . $enquiry['name'],
         'Phone: ' . $enquiry['phone'],
+        'Email: ' . ($enquiry['email'] ?: 'Not provided'),
         'Preferred date: ' . ($enquiry['preferred_date'] ?: 'Not specified'),
         'Message: ' . ($enquiry['message'] ?: 'Not provided'),
     ]);
