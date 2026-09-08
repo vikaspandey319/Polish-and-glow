@@ -26,7 +26,7 @@ $curriculum = [
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260906-2">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260908-1">
 </head>
 <body>
   <div class="announcement">Appointments &amp; academy enquiries <span>✦</span> now open</div>
