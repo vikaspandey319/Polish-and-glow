@@ -37,6 +37,17 @@ $curriculum = [
     })(window, document, 'script', 'dataLayer', 'GTM-KZFGVCXR');
   </script>
   <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN39Q152DS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-HN39Q152DS');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Polish & Glow — Nail Art Studio & Academy</title>
