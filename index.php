@@ -1,22 +1,42 @@
 <?php
+
 declare(strict_types=1);
 $config = require __DIR__ . '/config.php';
 $services = [
-    ['01', 'Nail Art & Extensions', 'Creative, gel and customized designs made to complement your shape, personality and lifestyle.', ['Creative nail art', 'Gel nail art', 'Nail extensions', 'Customized designs', 'Party and special-occasion nails', 'Seasonal designs']],
-    ['02', 'Manicure', 'Give your hands the care they deserve with a relaxing and professional manicure.', ['Nail shaping', 'Cuticle care', 'Nail cleaning', 'Moisturizing', 'Beautiful finish']],
-    ['03', 'Pedicure', 'Relax and refresh your feet with professional care for soft, beautiful-looking feet.', ['Nail shaping', 'Cuticle care', 'Cleaning', 'Exfoliation', 'Moisturizing and finishing']],
+  ['01', 'Nail Art & Extensions', 'Creative, gel and customized designs made to complement your shape, personality and lifestyle.', ['Creative nail art', 'Gel nail art', 'Nail extensions', 'Customized designs', 'Party and special-occasion nails', 'Seasonal designs']],
+  ['02', 'Manicure', 'Give your hands the care they deserve with a relaxing and professional manicure.', ['Nail shaping', 'Cuticle care', 'Nail cleaning', 'Moisturizing', 'Beautiful finish']],
+  ['03', 'Pedicure', 'Relax and refresh your feet with professional care for soft, beautiful-looking feet.', ['Nail shaping', 'Cuticle care', 'Cleaning', 'Exfoliation', 'Moisturizing and finishing']],
 ];
 $curriculum = [
-    ['Foundations & Hygiene', 'Basic nail care, hygiene, preparation and professional working practices.'],
-    ['Manicure & Pedicure', 'Professional shaping, cuticle care, cleaning and finishing techniques.'],
-    ['Gel & Extensions', 'Gel techniques, nail extensions, preparation and structured application.'],
-    ['Nail Art & Creativity', 'Design practice, customized looks, trends and creative techniques.'],
-    ['Salon Skills', 'Client handling, practical workflow and basic salon skills.'],
+  ['Foundations & Hygiene', 'Basic nail care, hygiene, preparation and professional working practices.'],
+  ['Manicure & Pedicure', 'Professional shaping, cuticle care, cleaning and finishing techniques.'],
+  ['Gel & Extensions', 'Gel techniques, nail extensions, preparation and structured application.'],
+  ['Nail Art & Creativity', 'Design practice, customized looks, trends and creative techniques.'],
+  ['Salon Skills', 'Client handling, practical workflow and basic salon skills.'],
 ];
 ?>
 <!doctype html>
 <html lang="en">
+
 <head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KZFGVCXR');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Polish & Glow — Nail Art Studio & Academy</title>
@@ -28,37 +48,197 @@ $curriculum = [
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=20260908-2">
 </head>
+
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZFGVCXR"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="announcement">Appointments &amp; academy enquiries <span>✦</span> now open</div>
   <nav class="navbar navbar-expand-lg sticky-top brand-nav" aria-label="Main navigation">
     <div class="container-fluid px-lg-5">
       <a class="navbar-brand" href="#home"><span class="brand-crop"><img src="assets/images/polishandglow-logo.jpeg" alt=""></span><span><strong>POLISH <i>&amp;</i> GLOW</strong><small>Nail Art Studio &amp; Academy</small></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3"><li class="nav-item"><a class="nav-link" href="#services">Services</a></li><li class="nav-item"><a class="nav-link" href="#academy">Academy</a></li><li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li><li class="nav-item"><a class="nav-link" href="#about">About</a></li><li class="nav-item"><a class="btn btn-outline-dark book-nav" href="#booking">Book now ↘</a></li></ul></div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#academy">Academy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="btn btn-outline-dark book-nav" href="#booking">Book now ↘</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <main>
-    <section id="home" class="hero container-fluid p-0"><div class="row g-0 min-vh-100"><div class="col-lg-6 hero-copy"><p class="eyebrow">Where beauty meets creativity</p><h1>Beauty on<br>your nails.<br><em>Skills for your future.</em></h1><p class="lead-copy">Premium nail care, custom artistry and practical academy training — created for clients who love beautiful details and students ready to build a professional skill.</p><div class="d-flex flex-column flex-sm-row gap-3"><a class="btn brand-btn" href="#booking"><i class="bi bi-calendar-heart me-2"></i>Book your appointment</a><a class="btn text-btn" href="#academy"><i class="bi bi-mortarboard me-2"></i>Start learning</a></div><div class="hero-trust"><span><i class="bi bi-gem"></i> Premium care</span><span><i class="bi bi-shield-check"></i> Hygiene first</span><span><i class="bi bi-stars"></i> Custom artistry</span></div></div><div class="col-lg-6 hero-image"><img class="cover" src="assets/images/hero-nails-v2.png" alt="Nude pink and rose-gold luxury nail art"><div class="logo-card"><img src="assets/images/polishandglow-logo.jpeg" alt="Polish and Glow — Shape. Art. Glow."></div><p class="image-caption">NAIL ART · STUDIO · ACADEMY<br><strong>Shape. Art. Glow.</strong></p></div></div></section>
+    <section id="home" class="hero container-fluid p-0">
+      <div class="row g-0 min-vh-100">
+        <div class="col-lg-6 hero-copy">
+          <p class="eyebrow">Where beauty meets creativity</p>
+          <h1>Beauty on<br>your nails.<br><em>Skills for your future.</em></h1>
+          <p class="lead-copy">Premium nail care, custom artistry and practical academy training — created for clients who love beautiful details and students ready to build a professional skill.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3"><a class="btn brand-btn" href="#booking"><i class="bi bi-calendar-heart me-2"></i>Book your appointment</a><a class="btn text-btn" href="#academy"><i class="bi bi-mortarboard me-2"></i>Start learning</a></div>
+          <div class="hero-trust"><span><i class="bi bi-gem"></i> Premium care</span><span><i class="bi bi-shield-check"></i> Hygiene first</span><span><i class="bi bi-stars"></i> Custom artistry</span></div>
+        </div>
+        <div class="col-lg-6 hero-image"><img class="cover" src="assets/images/hero-nails-v2.png" alt="Nude pink and rose-gold luxury nail art">
+          <div class="logo-card"><img src="assets/images/polishandglow-logo.jpeg" alt="Polish and Glow — Shape. Art. Glow."></div>
+          <p class="image-caption">NAIL ART · STUDIO · ACADEMY<br><strong>Shape. Art. Glow.</strong></p>
+        </div>
+      </div>
+    </section>
 
-    <section id="services" class="section bg-cream"><div class="container"><p class="eyebrow">Our services</p><div class="row align-items-end mb-5"><div class="col-lg-7"><h2>Crafted for<br><em>confidence.</em></h2></div><div class="col-lg-5"><p>From elegant minimal finishes to expressive nail art, every service is shaped around your style, comfort and occasion.</p></div></div><div class="row g-4 service-grid"><?php $icons = ['bi-stars', 'bi-hand-index-thumb', 'bi-flower1']; foreach ($services as $serviceIndex => [$number, $title, $description, $features]): ?><div class="col-lg-4"><article class="service-card h-100"><div class="service-photo"><span class="service-icon"><i class="bi <?= $icons[$serviceIndex] ?>"></i></span></div><span class="number"><?= htmlspecialchars($number) ?></span><h3><?= htmlspecialchars($title) ?></h3><p><?= htmlspecialchars($description) ?></p><ul><?php foreach ($features as $feature): ?><li><i class="bi bi-check2"></i> <?= htmlspecialchars($feature) ?></li><?php endforeach; ?></ul><a href="#booking">Enquire now <i class="bi bi-arrow-right"></i></a></article></div><?php endforeach; ?></div></div></section>
+    <section id="services" class="section bg-cream">
+      <div class="container">
+        <p class="eyebrow">Our services</p>
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7">
+            <h2>Crafted for<br><em>confidence.</em></h2>
+          </div>
+          <div class="col-lg-5">
+            <p>From elegant minimal finishes to expressive nail art, every service is shaped around your style, comfort and occasion.</p>
+          </div>
+        </div>
+        <div class="row g-4 service-grid"><?php $icons = ['bi-stars', 'bi-hand-index-thumb', 'bi-flower1'];
+                                          foreach ($services as $serviceIndex => [$number, $title, $description, $features]): ?><div class="col-lg-4">
+              <article class="service-card h-100">
+                <div class="service-photo"><span class="service-icon"><i class="bi <?= $icons[$serviceIndex] ?>"></i></span></div><span class="number"><?= htmlspecialchars($number) ?></span>
+                <h3><?= htmlspecialchars($title) ?></h3>
+                <p><?= htmlspecialchars($description) ?></p>
+                <ul><?php foreach ($features as $feature): ?><li><i class="bi bi-check2"></i> <?= htmlspecialchars($feature) ?></li><?php endforeach; ?></ul><a href="#booking">Enquire now <i class="bi bi-arrow-right"></i></a>
+              </article>
+            </div><?php endforeach; ?></div>
+      </div>
+    </section>
 
-    <section class="experience"><div class="container-fluid"><div class="row g-0"><div class="col-lg-6 experience-photo"><img src="assets/images/hero-nails.png" alt="Professional manicure detail" loading="lazy"></div><div class="col-lg-6 experience-copy"><p class="eyebrow">The experience</p><h2>It starts with<br><em>the details.</em></h2><p>Every set is created with care and attention to detail. We believe your nails are a way to express your personality.</p><div class="process"><div><b>01</b><span><strong>Consult</strong>Tell us your vision, occasion and preferences.</span></div><div><b>02</b><span><strong>Create</strong>We prepare and create your chosen look.</span></div><div><b>03</b><span><strong>Glow</strong>Leave polished, confident and ready.</span></div></div></div></div></div></section>
+    <section class="experience">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <div class="col-lg-6 experience-photo"><img src="assets/images/hero-nails.png" alt="Professional manicure detail" loading="lazy"></div>
+          <div class="col-lg-6 experience-copy">
+            <p class="eyebrow">The experience</p>
+            <h2>It starts with<br><em>the details.</em></h2>
+            <p>Every set is created with care and attention to detail. We believe your nails are a way to express your personality.</p>
+            <div class="process">
+              <div><b>01</b><span><strong>Consult</strong>Tell us your vision, occasion and preferences.</span></div>
+              <div><b>02</b><span><strong>Create</strong>We prepare and create your chosen look.</span></div>
+              <div><b>03</b><span><strong>Glow</strong>Leave polished, confident and ready.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="academy" class="section academy"><div class="container"><div class="row g-5"><div class="col-lg-5"><p class="eyebrow">Polish &amp; Glow Academy</p><h2>Learn. Create.<br><em>Grow.</em></h2><p>Our courses are designed for beginners and students who want to improve their existing nail-art skills through practical learning, step-by-step guidance and creative design practice.</p><a class="btn brand-btn mt-3" href="#booking">Enquire about courses ↘</a><div class="benefits mt-5"><span>Hands-on practical training</span><span>Beginner-friendly learning</span><span>Experienced trainer guidance</span><span>Professional techniques</span><span>Aspiring artists &amp; salon professionals</span></div></div><div class="col-lg-7 curriculum"><?php foreach ($curriculum as $index => [$title, $description]): ?><article><span><?= str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT) ?></span><div><h3><?= htmlspecialchars($title) ?></h3><p><?= htmlspecialchars($description) ?></p></div><b>✦</b></article><?php endforeach; ?></div></div></div></section>
+    <section id="academy" class="section academy">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">Polish &amp; Glow Academy</p>
+            <h2>Learn. Create.<br><em>Grow.</em></h2>
+            <p>Our courses are designed for beginners and students who want to improve their existing nail-art skills through practical learning, step-by-step guidance and creative design practice.</p><a class="btn brand-btn mt-3" href="#booking">Enquire about courses ↘</a>
+            <div class="benefits mt-5"><span>Hands-on practical training</span><span>Beginner-friendly learning</span><span>Experienced trainer guidance</span><span>Professional techniques</span><span>Aspiring artists &amp; salon professionals</span></div>
+          </div>
+          <div class="col-lg-7 curriculum"><?php foreach ($curriculum as $index => [$title, $description]): ?><article><span><?= str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT) ?></span>
+                <div>
+                  <h3><?= htmlspecialchars($title) ?></h3>
+                  <p><?= htmlspecialchars($description) ?></p>
+                </div><b>✦</b>
+              </article><?php endforeach; ?></div>
+        </div>
+      </div>
+    </section>
 
-    <section id="gallery" class="section gallery"><div class="container"><p class="eyebrow">Nail art inspiration</p><h2>Your nails.<br><em>Your style.</em></h2><p class="gallery-intro">Explore elegant, trendy, glamorous and customized ideas — then let us create a design of your own.</p><div class="row g-4 mt-4"><?php foreach (['Soft Blush','Rose Chrome','Deep Romance','French Glow','Pearl Detail'] as $index => $name): ?><div class="col-sm-6 col-lg-4"><article class="gallery-card tone-<?= $index + 1 ?>"><div><span>0<?= $index + 1 ?></span><small>Style inspiration</small></div><h3><?= htmlspecialchars($name) ?></h3><p>Make this look yours</p></article></div><?php endforeach; ?></div></div></section>
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <p class="eyebrow">Nail art inspiration</p>
+        <h2>Your nails.<br><em>Your style.</em></h2>
+        <p class="gallery-intro">Explore elegant, trendy, glamorous and customized ideas — then let us create a design of your own.</p>
+        <div class="row g-4 mt-4"><?php foreach (['Soft Blush', 'Rose Chrome', 'Deep Romance', 'French Glow', 'Pearl Detail'] as $index => $name): ?><div class="col-sm-6 col-lg-4">
+              <article class="gallery-card tone-<?= $index + 1 ?>">
+                <div><span>0<?= $index + 1 ?></span><small>Style inspiration</small></div>
+                <h3><?= htmlspecialchars($name) ?></h3>
+                <p>Make this look yours</p>
+              </article>
+            </div><?php endforeach; ?></div>
+      </div>
+    </section>
 
-    <section id="about" class="section why"><div class="container"><p class="eyebrow">Why choose Polish &amp; Glow</p><h2>Beauty is personal.<br><em>So is our care.</em></h2><div class="row g-0 mt-5 feature-grid"><?php foreach ([['Creative & customized','Designs created around your personality and inspiration.'],['Professional care','Clean, professional nail-care services in a welcoming environment.'],['Personal attention','Care and guidance for every client, at every step.'],['Skill-based learning','Practical education for aspiring nail artists and salon professionals.']] as $item): ?><div class="col-md-6 col-xl-3"><article><span>✦</span><h3><?= htmlspecialchars($item[0]) ?></h3><p><?= htmlspecialchars($item[1]) ?></p></article></div><?php endforeach; ?></div></div></section>
+    <section id="about" class="section why">
+      <div class="container">
+        <p class="eyebrow">Why choose Polish &amp; Glow</p>
+        <h2>Beauty is personal.<br><em>So is our care.</em></h2>
+        <div class="row g-0 mt-5 feature-grid"><?php foreach ([['Creative & customized', 'Designs created around your personality and inspiration.'], ['Professional care', 'Clean, professional nail-care services in a welcoming environment.'], ['Personal attention', 'Care and guidance for every client, at every step.'], ['Skill-based learning', 'Practical education for aspiring nail artists and salon professionals.']] as $item): ?><div class="col-md-6 col-xl-3">
+              <article><span>✦</span>
+                <h3><?= htmlspecialchars($item[0]) ?></h3>
+                <p><?= htmlspecialchars($item[1]) ?></p>
+              </article>
+            </div><?php endforeach; ?></div>
+      </div>
+    </section>
 
-    <section class="mission text-center"><div class="container"><p class="eyebrow">Our mission</p><h2>We create confidence,<br><em>creativity &amp; careers.</em></h2><p>Our mission is to make every client feel confident and beautiful while helping aspiring nail artists develop professional skills and creativity.</p></div></section>
+    <section class="mission text-center">
+      <div class="container">
+        <p class="eyebrow">Our mission</p>
+        <h2>We create confidence,<br><em>creativity &amp; careers.</em></h2>
+        <p>Our mission is to make every client feel confident and beautiful while helping aspiring nail artists develop professional skills and creativity.</p>
+      </div>
+    </section>
 
-    <section id="booking" class="section booking"><div class="container"><div class="row g-5"><div class="col-lg-5"><p class="eyebrow">Appointments &amp; academy</p><h2>Ready for<br><em>your glow?</em></h2><p>Book your appointment or enquire about academy courses. Your enquiry will be saved before WhatsApp opens.</p><div class="contact-list"><p>WhatsApp <a href="https://wa.me/<?= htmlspecialchars($config['whatsapp']) ?>" target="_blank" rel="noopener"><strong><?= htmlspecialchars($config['phone']) ?></strong></a></p><p>Instagram <a href="<?= htmlspecialchars($config['instagram_url']) ?>" target="_blank" rel="noopener"><strong><?= htmlspecialchars($config['instagram_handle']) ?></strong></a></p><p>Facebook <a href="<?= htmlspecialchars($config['facebook_url']) ?>" target="_blank" rel="noopener"><strong><?= htmlspecialchars($config['facebook_handle']) ?></strong></a></p><p>Studio <strong><?= htmlspecialchars($config['address']) ?></strong></p></div></div><div class="col-lg-7"><form id="bookingForm" class="row g-4" novalidate><div class="col-md-6"><label class="form-label" for="name">Name</label><input class="form-control" id="name" required></div><div class="col-md-6"><label class="form-label" for="phone">Phone</label><input class="form-control" id="phone" inputmode="tel" required></div><div class="col-md-6"><label class="form-label" for="email">Email <span class="text-muted">(optional)</span></label><input class="form-control" type="email" id="email" autocomplete="email"></div><div class="col-md-6"><label class="form-label" for="interest">Interest</label><select class="form-select" id="interest" required><option value="">Choose one</option><option>Nail Art / Extensions</option><option>Manicure</option><option>Pedicure</option><option>Academy Courses</option></select></div><div class="col-md-6"><label class="form-label" for="date">Preferred date</label><input class="form-control" type="date" id="date"></div><div class="col-12"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" rows="4"></textarea></div><div class="d-none" aria-hidden="true"><label for="website">Website</label><input id="website" tabindex="-1" autocomplete="off"></div><div class="col-12"><button class="btn rose-btn" type="submit">Save &amp; open WhatsApp ↗</button><div id="formStatus" class="mt-3" role="status"></div></div></form></div></div></div></section>
+    <section id="booking" class="section booking">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">Appointments &amp; academy</p>
+            <h2>Ready for<br><em>your glow?</em></h2>
+            <p>Book your appointment or enquire about academy courses. Your enquiry will be saved before WhatsApp opens.</p>
+            <div class="contact-list">
+              <p>WhatsApp <a href="https://wa.me/<?= htmlspecialchars($config['whatsapp']) ?>" target="_blank" rel="noopener"><strong><?= htmlspecialchars($config['phone']) ?></strong></a></p>
+              <p>Instagram <a href="<?= htmlspecialchars($config['instagram_url']) ?>" target="_blank" rel="noopener"><strong><?= htmlspecialchars($config['instagram_handle']) ?></strong></a></p>
+              <p>Facebook <a href="<?= htmlspecialchars($config['facebook_url']) ?>" target="_blank" rel="noopener"><strong><?= htmlspecialchars($config['facebook_handle']) ?></strong></a></p>
+              <p>Studio <strong><?= htmlspecialchars($config['address']) ?></strong></p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="bookingForm" class="row g-4" novalidate>
+              <div class="col-md-6"><label class="form-label" for="name">Name</label><input class="form-control" id="name" required></div>
+              <div class="col-md-6"><label class="form-label" for="phone">Phone</label><input class="form-control" id="phone" inputmode="tel" required></div>
+              <div class="col-md-6"><label class="form-label" for="email">Email <span class="text-muted">(optional)</span></label><input class="form-control" type="email" id="email" autocomplete="email"></div>
+              <div class="col-md-6"><label class="form-label" for="interest">Interest</label><select class="form-select" id="interest" required>
+                  <option value="">Choose one</option>
+                  <option>Nail Art / Extensions</option>
+                  <option>Manicure</option>
+                  <option>Pedicure</option>
+                  <option>Academy Courses</option>
+                </select></div>
+              <div class="col-md-6"><label class="form-label" for="date">Preferred date</label><input class="form-control" type="date" id="date"></div>
+              <div class="col-12"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" rows="4"></textarea></div>
+              <div class="d-none" aria-hidden="true"><label for="website">Website</label><input id="website" tabindex="-1" autocomplete="off"></div>
+              <div class="col-12"><button class="btn rose-btn" type="submit">Save &amp; open WhatsApp ↗</button>
+                <div id="formStatus" class="mt-3" role="status"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer><div class="container"><div class="row g-4 align-items-start"><div class="col-lg-4"><img class="footer-logo" src="assets/images/polishandglow-logo.jpeg" alt="Polish and Glow logo"></div><div class="col-6 col-lg-2"><a href="#services">Services</a><a href="#academy">Academy</a><a href="#gallery">Gallery</a></div><div class="col-6 col-lg-2"><a href="#about">About</a><a href="#booking">Book</a><a href="<?= htmlspecialchars($config['instagram_url']) ?>" target="_blank" rel="noopener">Instagram</a><a href="<?= htmlspecialchars($config['facebook_url']) ?>" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/<?= htmlspecialchars($config['whatsapp']) ?>" target="_blank" rel="noopener">WhatsApp</a></div><div class="col-lg-4"><p>Beauty on Your Nails.<br>Skills for Your Future.</p></div></div><small>© <?= date('Y') ?> Polish &amp; Glow</small></div></footer>
+  <footer>
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4"><img class="footer-logo" src="assets/images/polishandglow-logo.jpeg" alt="Polish and Glow logo"></div>
+        <div class="col-6 col-lg-2"><a href="#services">Services</a><a href="#academy">Academy</a><a href="#gallery">Gallery</a></div>
+        <div class="col-6 col-lg-2"><a href="#about">About</a><a href="#booking">Book</a><a href="<?= htmlspecialchars($config['instagram_url']) ?>" target="_blank" rel="noopener">Instagram</a><a href="<?= htmlspecialchars($config['facebook_url']) ?>" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/<?= htmlspecialchars($config['whatsapp']) ?>" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="col-lg-4">
+          <p>Beauty on Your Nails.<br>Skills for Your Future.</p>
+        </div>
+      </div><small>© <?= date('Y') ?> Polish &amp; Glow</small>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/app.js?v=20260906-2"></script>
 </body>
+
 </html>
