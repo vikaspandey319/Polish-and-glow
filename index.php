@@ -19,6 +19,9 @@ $curriculum = [
 <html lang="en">
 
 <head>
+  <meta name="google-adsense-account" content="ca-pub-9187480166821130">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9187480166821130"
+    crossorigin="anonymous"></script>
   <!-- Google Tag Manager -->
   <script>
     (function(w, d, s, l, i) {
