@@ -79,6 +79,7 @@ $curriculum = [
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#academy">Academy</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reels">Reels</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="btn btn-outline-dark book-nav" href="#booking">Book now ↘</a></li>
         </ul>
@@ -178,6 +179,32 @@ $curriculum = [
       </div>
     </section>
 
+    <section id="reels" class="section reels">
+      <div class="container">
+        <p class="eyebrow">From our studio</p>
+        <h2>Watch the<br><em>art come alive.</em></h2>
+        <p class="reels-intro">A closer look at real Polish &amp; Glow nail-art moments, details and transformations.</p>
+        <div class="row g-4 mt-4">
+          <?php foreach ([
+            ['nail-art-reel-01.mp4', 'Nail-art detail'],
+            ['nail-art-reel-02.mp4', 'Studio creation'],
+            ['nail-art-reel-03.mp4', 'Fresh set reveal'],
+            ['nail-art-reel-04.mp4', 'Signature finish'],
+          ] as [$video, $label]): ?>
+            <div class="col-sm-6 col-lg-3">
+              <article class="reel-card">
+                <video controls preload="metadata" playsinline aria-label="<?= htmlspecialchars($label) ?>">
+                  <source src="assets/videos/<?= htmlspecialchars($video) ?>" type="video/mp4">
+                  Your browser does not support video playback.
+                </video>
+                <p><?= htmlspecialchars($label) ?></p>
+              </article>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section why">
       <div class="container">
         <p class="eyebrow">Why choose Polish &amp; Glow</p>
@@ -242,7 +269,7 @@ $curriculum = [
     <div class="container">
       <div class="row g-4 align-items-start">
         <div class="col-lg-4"><img class="footer-logo" src="assets/images/polishandglow-logo.jpeg" alt="Polish and Glow logo"></div>
-        <div class="col-6 col-lg-2"><a href="#services">Services</a><a href="#academy">Academy</a><a href="#gallery">Gallery</a></div>
+        <div class="col-6 col-lg-2"><a href="#services">Services</a><a href="#academy">Academy</a><a href="#gallery">Gallery</a><a href="#reels">Reels</a></div>
         <div class="col-6 col-lg-2"><a href="#about">About</a><a href="#booking">Book</a><a href="<?= htmlspecialchars($config['instagram_url']) ?>" target="_blank" rel="noopener">Instagram</a><a href="<?= htmlspecialchars($config['facebook_url']) ?>" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/<?= htmlspecialchars($config['whatsapp']) ?>" target="_blank" rel="noopener">WhatsApp</a></div>
         <div class="col-lg-4">
           <p>Beauty on Your Nails.<br>Skills for Your Future.</p>
