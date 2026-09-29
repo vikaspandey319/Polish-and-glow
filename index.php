@@ -186,14 +186,14 @@ $curriculum = [
         <p class="reels-intro">A closer look at real Polish &amp; Glow nail-art moments, details and transformations.</p>
         <div class="row g-4 mt-4">
           <?php foreach ([
-            ['nail-art-reel-01.mp4', 'Nail-art detail'],
-            ['nail-art-reel-02.mp4', 'Studio creation'],
-            ['nail-art-reel-03.mp4', 'Fresh set reveal'],
-            ['nail-art-reel-04.mp4', 'Signature finish'],
-          ] as [$video, $label]): ?>
+            ['nail-art-reel-01.mp4', 'gallery-soft-blush.png', 'Nail-art detail'],
+            ['nail-art-reel-02.mp4', 'gallery-rose-chrome.png', 'Studio creation'],
+            ['nail-art-reel-03.mp4', 'gallery-deep-romance.png', 'Fresh set reveal'],
+            ['nail-art-reel-04.mp4', 'gallery-french-glow.png', 'Signature finish'],
+          ] as [$video, $poster, $label]): ?>
             <div class="col-sm-6 col-lg-3">
               <article class="reel-card">
-                <video controls preload="metadata" playsinline aria-label="<?= htmlspecialchars($label) ?>">
+                <video controls preload="none" playsinline poster="assets/images/<?= htmlspecialchars($poster) ?>" aria-label="<?= htmlspecialchars($label) ?>">
                   <source src="assets/videos/<?= htmlspecialchars($video) ?>" type="video/mp4">
                   Your browser does not support video playback.
                 </video>
