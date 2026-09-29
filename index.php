@@ -164,6 +164,38 @@ $curriculum = [
       </div>
     </section>
 
+    <section id="academy-moments" class="section academy-moments">
+      <div class="container">
+        <p class="eyebrow">Learning in action</p>
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-7"><h2>Inside our<br><em>academy studio.</em></h2></div>
+          <div class="col-lg-5"><p>Hands-on learning, careful guidance and creative practice — one detail at a time.</p></div>
+        </div>
+        <div id="academyCarousel" class="carousel slide carousel-fade academy-carousel" data-bs-touch="true" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <?php foreach (range(0, 5) as $index): ?><button type="button" data-bs-target="#academyCarousel" data-bs-slide-to="<?= $index ?>" class="<?= $index === 0 ? 'active' : '' ?>" <?= $index === 0 ? 'aria-current="true"' : '' ?> aria-label="Academy moment <?= $index + 1 ?>"></button><?php endforeach; ?>
+          </div>
+          <div class="carousel-inner">
+            <?php foreach ([
+              ['academy-moment-01.webp', 'Guided practice'],
+              ['academy-moment-02.webp', 'Creative class session'],
+              ['academy-moment-03.webp', 'Design detail'],
+              ['academy-moment-04.webp', 'Skill-building practice'],
+              ['academy-moment-05.webp', 'Hands-on learning'],
+              ['academy-moment-06.webp', 'Nail shaping technique'],
+            ] as $index => [$image, $caption]): ?>
+              <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                <img src="assets/images/academy-moments/<?= htmlspecialchars($image) ?>" class="d-block w-100" alt="<?= htmlspecialchars($caption) ?> at Polish and Glow Academy" loading="<?= $index === 0 ? 'eager' : 'lazy' ?>">
+                <div class="carousel-caption"><span>Polish &amp; Glow Academy</span><strong><?= htmlspecialchars($caption) ?></strong></div>
+              </div>
+            <?php endforeach; ?>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#academyCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#academyCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+        </div>
+      </div>
+    </section>
+
     <section id="gallery" class="section gallery">
       <div class="container">
         <p class="eyebrow">Nail art inspiration</p>
